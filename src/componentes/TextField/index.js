@@ -1,10 +1,18 @@
 import "./TextField.css";
 
 const TextField = (props) => {
+  const handleChange = (e) => {
+    props.handle(e.target.value);
+  };
+
   return (
     <div className="textfield">
       <label>{props.label}</label>
-      <input required={props.required} placeholder={props.placeholder} />
+      <input
+        onChange={handleChange}
+        required={props.required}
+        placeholder={props.placeholder}
+      />
     </div>
   );
 };

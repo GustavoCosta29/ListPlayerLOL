@@ -4,7 +4,11 @@ const ListSuspend = (props) => {
   return (
     <div className="listsuspend">
       <label>{props.label}</label>
-      <select>
+      <select
+        onChange={(e) => props.handle(e.target.value)}
+        value={props.value}
+        required={props.required}
+      >
         {props.items.map((item) => (
           <option key={item}>{item}</option>
         ))}
