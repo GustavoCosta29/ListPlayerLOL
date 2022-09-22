@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    
+}
+
+.form h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.form form {
+    width: 100%;
+    max-width: 50%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 36px 64px;
+    box-shadow: 8px 8px 16px rgba(0, 0 ,0, 0.08);
+}
