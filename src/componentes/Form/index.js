@@ -49,7 +49,7 @@ const Form = (props) => {
           handle={(lane) => setLane(lane)}
           required={true}
           label="Lane"
-          items={["Adc", "Top", "Jungle", "Suporte", "Mid"]}
+          items={props.teams}
         />
         <Button>Create Card</Button>
       </form>
