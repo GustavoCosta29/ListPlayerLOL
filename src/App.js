@@ -2,7 +2,7 @@ import Banner from "./componentes/Banner";
 import Form from "./componentes/Form";
 import { useState } from "react";
 import Team from "./componentes/Team";
-import Rodape from "./componentes/Rodape";
+import Footer from "./componentes/Footer";
 
 function App() {
   const [registeredPlayers, setRegisteredPlayer] = useState([]);
@@ -25,7 +25,7 @@ function App() {
     {
       name: "Jungle",
       colorPrimary: "#D86EBF",
-      colorSecondary: "#FAE95F5",
+      colorSecondary: "#FAE9F5",
     },
     {
       name: "Mid",
@@ -57,7 +57,7 @@ function App() {
           )}
         />
       ))}
-      <Rodape />
+      <Footer />
     </div>
   );
 }
