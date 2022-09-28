@@ -13,6 +13,10 @@ const Form = (props) => {
       image,
       lane,
     });
+    setName("");
+    setOffice("");
+    setImage("");
+    setLane("");
   };
 
   const [name, setName] = useState("");

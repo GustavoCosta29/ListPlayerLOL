@@ -2,13 +2,13 @@ import Banner from "./componentes/Banner";
 import Form from "./componentes/Form";
 import { useState } from "react";
 import Team from "./componentes/Team";
+import Rodape from "./componentes/Rodape";
 
 function App() {
   const [registeredPlayers, setRegisteredPlayer] = useState([]);
 
   const addRegisteredPlayer = (player) => {
     setRegisteredPlayer([...registeredPlayers, player]);
-    console.log(player);
   };
 
   const teams = [
@@ -52,8 +52,12 @@ function App() {
           name={team.name}
           colorPrimary={team.colorPrimary}
           colorSecondary={team.colorSecondary}
+          registeredPlayers={registeredPlayers.filter(
+            (player) => player.lane === team.name
+          )}
         />
       ))}
+      <Rodape />
     </div>
   );
 }
