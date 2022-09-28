@@ -12,12 +12,16 @@
 
 .footer ul li {
     display: inline-block;
-    margin-right: 32px;
+    margin: 18px;
 }
 
 .footer p {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+.footer img {
+    width: 100%;
 }
 
